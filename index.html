@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masked ZÆLS | Hyperliquid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url("https://i.ibb.co/YZpzt3N/smoke.gif") repeat;
+      background-size: cover;
+      opacity: 0.05;
+      z-index: -1;
+      pointer-events: none;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.85);
+      padding: 14px 20px;
+      display: flex;
+      justify-content: start;
+      overflow-x: auto;
+      gap: 20px;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(255,0,85,0.3);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: 0.3s;
+      white-space: nowrap;
+    }
+    nav a:hover { color: #ff0055; }
+    header {
+      text-align: center;
+      padding: 140px 20px 80px;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.3rem;
+      color: #ff2a2a;
+      text-shadow: 0 0 15px #ff2a2a;
+    }
+    header h3 {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #ccc;
+      letter-spacing: 2px;
+    }
+    header img {
+      max-width: 240px;
+      margin: 30px auto;
+      display: block;
+      animation: float 6s ease-in-out infinite;
+    }
+    .button {
+      background-color: #ff0055;
+      color: #fff;
+      padding: 12px 28px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 20px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .button:hover { background-color: #cc0044; }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+      border-left: 5px solid red;
+      background: #111;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      color: #ff0055;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #ff0055;
+    }
+    p, li {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    ul { padding-left: 20px; }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      background: #0a0a0a;
+      margin-top: 60px;
+    }
+    #audio-control {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff0055;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <audio id="bg-audio" loop autoplay muted>
+    <source src="We Are the Masked (1).mp3" type="audio/mpeg">
+  </audio>
+  <button id="audio-control">🔇</button>
+
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#lore">LORE</a>
+    <a href="#whitepaper">WHITEPAPER</a>
+    <a href="#utility">UTILITY</a>
+    <a href="#vision">VISION</a>
+    <a href="#why">WHY</a>
+    <a href="#final">FINAL</a>
+  </nav>
+
+  <header data-aos="bounce-in-down">
+    <h1>MASKED ZÆLS</h1>
+    <h3>Built for Survivors</h3>
+    <img src="https://i.imgur.com/lAEye9E.png" alt="Masked ZÆLS Mask" />
+    <a href="https://discord.gg/aYfcYMvcBA" class="button" target="_blank">Join the Movement</a>
+  </header>
+
+  <section id="about" data-aos="zoom-in-up">
+    <h2>🧠 About</h2>
+    <p>Masked ZÆLS is the first emotionally forged NFT protocol on HYPERLIQUID, grounded in the energy of those who never left.</p>
+    <p>This isn't hype.<br>This is history.</p>
+    <p>We're building a scalable brand, designed for:</p>
+    <ul>
+      <li>Bridging Web2 trauma with Web3 trust</li>
+      <li>Telling stories that feel real because they are</li>
+      <li>Rewarding loyalty in a space that forgot what it meant</li>
+    </ul>
+    <p>Born from pain.<br>Built with purpose.<br>Run by survivors.</p>
+    <p>This is not just a project.<br>This is a movement.<br>And you're part of it.</p>
+  </section>
+
+  <section id="lore" data-aos="zoom-in-up">
+    <h2>📖 LORE | The Ones Who Stayed</h2>
+    <p>There was a time — not long ago — when the chain was quiet. And the dreams were louder than the market.</p>
+    <p>They came in with hope:<br>A father. A mother. A boy. A girl.<br>Each searching for something bigger.</p>
+    <p>They minted. They joined communities. They believed.<br>And then, it all went dark.</p>
+    <p>Projects vanished. Friends turned to flippers. Hope became loss.</p>
+    <p>The father stopped speaking. The mother ignored her wallet. The boy grew cold. The girl cried in silence.</p>
+    <p>And just when it felt like it was over — it appeared.</p>
+    <p><strong>The Mask.</strong><br>Not a savior. Not a promise.<br>Just truth reflected in silence.</p>
+    <p>The Mask didn’t lie. It didn’t hype. It showed them that others stayed. That they weren’t alone. That survivors existed — still holding, still here.</p>
+    <p>And one by one, they rose. The masked came together. Quiet. Relentless. True.</p>
+    <p>These were the Masked ZÆLS. Not the loudest. Not the richest. But the most real.</p>
+    <p>They took pain and made protocol. They turned silence into structure. They built for the ones who believed.</p>
+  </section>
+
+  <section id="whitepaper" data-aos="zoom-in-up">
+    <h2>📜 Whitepaper: Masked ZÆLS on HYPERLIQUID</h2>
+    <p>Masked ZÆLS is a community forged NFT movement powered by HYPERLIQUID — born out of betrayal, refined through resilience, and built for the ones who refused to fade.</p>
+    <p>We are the holders who were rugged. The believers who were mocked. The loyal who were left behind.</p>
+    <p>And now, we turn that pain into power. This is not just an NFT. This is a survivor’s chain.</p>
+    <p>Through evolving art, trait-based upgrades, staking rewards, and a deeply integrated DAO, Masked ZÆLS rises as a new force on HYPERLIQUID — a culture where loyalty isn’t weakness, it’s the weapon.</p>
+  </section>
+
+  <section id="utility" data-aos="zoom-in-up">
+    <h2>🔧 Utility</h2>
+    <p>Everything in Masked ZÆLS is earned. Nothing is handed out.<br>Our ecosystem is powered by HYPERLIQUID — and built for survivors.</p>
+    <p>Here’s what you unlock:</p>
+    <ul>
+      <li><strong>Borrower Access</strong> — Use your NFT as collateral to borrow $HYPER in low points. Pay it back within 2 weeks to retrieve your NFT — or let the DAO decide your next chapter.</li>
+      <li><strong>Staking + $MASKED</strong> — Stake your ZÆLS and earn $MASKED tokens. Airdrops scale with rarity and loyalty.</li>
+      <li><strong>Alpha Group Access</strong> — Private DAO calls featuring real alpha from veteran traders.</li>
+      <li><strong>Copy Trading Bot</strong> — Sync your wallet and let it shadow elite wallets in real time.</li>
+      <li><strong>Trait Upgrade System</strong> — Boost the look and function of your NFTs based on rarity and staking.</li>
+      <li><strong>Raffles & Rewards</strong> — Access exclusive drops and benefits only for active $MASKED holders.</li>
+    </ul>
+  </section>
+
+  <section id="vision" data-aos="zoom-in-up">
+    <h2>🎭 The Vision</h2>
+    <p>We’re building something that outlasts hype.</p>
+    <p>Masked ZÆLS is not just a protocol — it’s a sanctuary for the betrayed, a system for the consistent, and a brand forged in the fire of HYPERLIQUID’s realest moments.</p>
+    <ul>
+      <li>🎨 Emotionally driven art that evolves with the chain</li>
+      <li>📖 Lore that mirrors real pain from real Web3 experiences</li>
+      <li>⚙️ Holder-first tools to unlock real value</li>
+      <li>🧠 A DAO that isn’t about noise — it’s about builders</li>
+    </ul>
+  </section>
+
+  <section id="why" data-aos="zoom-in-up">
+    <h2>🧬 Why We'll Last</h2>
+    <p>Our power isn’t hype. It’s identity.</p>
+    <p>Masked ZÆLS reflects the truth of Web3:<br>That the ones who lost the most… are the ones who build the strongest.</p>
+    <p>We’ve taken what others called a flaw — loyalty, patience, belief — and turned it into our ecosystem’s backbone.</p>
+    <p>This isn’t a trend.<br>It’s a transformation.</p>
+    <p>We’re building across content, gamification, and narrative-rich layers of HYPERLIQUID — but it all starts with the real ones.</p>
+  </section>
+
+  <section id="final" data-aos="zoom-in-up">
+    <h2>🕯 Final Words</h2>
+    <p>For the father.<br>For the mother.<br>For the boy.<br>For the girl.</p>
+    <p>For the dreamers who were left behind.<br>For the traders who kept holding.<br>For the souls who didn't give up.</p>
+    <p>We are the Masked.<br>We don't fade.<br>We evolve.</p>
+    <p>Welcome to the protocol of survivors.<br>Welcome to Masked ZÆLS.<br><strong>Powered by HYPERLIQUID.</strong></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Masked ZÆLS. Built for survivors. Forged on HYPERLIQUID.<br />
+    <a href="https://discord.gg/aYfcYMvcBA" target="_blank" style="color:#ff0055;">Join Our Discord</a>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: false, duration: 1000 });
+    const audio = document.getElementById('bg-audio');
+    const button = document.getElementById('audio-control');
+    button.addEventListener('click', () => {
+      audio.muted = !audio.muted;
+      button.textContent = audio.muted ? '🔇' : '🔊';
+    });
+    window.addEventListener("beforeunload", () => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+  </script>
+</body>
+</html>
